@@ -1,0 +1,113 @@
+/*
+ CSS to Bit-Generation
+*/
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+#first-page{
+  background-image: url('cheap_diagonal_fabric.png');
+  background-repeat: repeat;
+  width: 100%;
+  text-align: center;
+}
+#main-title{
+    font-size: 56px;
+    font-weight: bold;
+}
+#details-title{
+  font-size: 32px;
+}
+.arrow-down{
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  font-size: 50px;
+  transform: translateX(-50%);
+}
+.arrow-down:hover{
+  color: #888;
+}
+path {
+fill: #FFFF33;
+stroke: #000;
+stroke-width: 2px;
+}
+.ref-link{
+  cursor: pointer;
+  color: #1e90ff;
+}
+.ref-link:hover{
+  text-decoration: none;
+  color: #6BB5FF;
+}
+
+@media (max-width: 750px) {
+  #beat1{
+    display: none;
+  }
+  #beat2{
+    display: none;
+  }
+}
+#beat1{
+  width: 205px;
+  height: 152px;
+
+}
+#beat2{
+  width: 100px;
+  height: 143px;
+
+}
+.def-title{
+  font-size: 48px;
+  font-weight: 700;
+}
+.chapter-title{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.photo{
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.bio-row{
+  margin-bottom: 50px;
+}
+#bit-footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.timeline{
+  height: 100px;
+}
+.author-name{
+  border: 2px solid #0277bd;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #0277bd;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+a .author-name:hover{
+  color: #0277bd;
+  background-color: #fff;
+  text-decoration: none;
+}
