@@ -6,7 +6,7 @@ body{
   font-weight: normal;
 }
 #first-page{
-  background-image: url('cheap_diagonal_fabric.png');
+  background-image: url('../images/cheap_diagonal_fabric.png');
   background-repeat: repeat;
   width: 100%;
   text-align: center;
@@ -21,6 +21,7 @@ body{
 .arrow-down{
   top: 80%;
   left: 50%;
+  color: #60bdaf;
   position: absolute;
   font-size: 50px;
   transform: translateX(-50%);
@@ -29,7 +30,7 @@ body{
   color: #888;
 }
 path {
-fill: #FFFF33;
+fill: #60bdaf;
 stroke: #000;
 stroke-width: 2px;
 }
@@ -51,14 +52,24 @@ stroke-width: 2px;
   }
 }
 #beat1{
+  margin: 3px;
   width: 205px;
   height: 152px;
-
 }
 #beat2{
+  margin: 3px;
   width: 100px;
   height: 143px;
-
+}
+#beat3{
+  margin: 3px;
+  width: 100px;
+  height: 143px;
+}
+#beat4{
+  margin: 3px;
+  width: 220px;
+  height: 140px;
 }
 .def-title{
   font-size: 48px;
@@ -92,13 +103,13 @@ stroke-width: 2px;
   color: #fff;
 }
 .timeline{
-  height: 100px;
+  height: 200px;
 }
 .author-name{
-  border: 2px solid #0277bd;
+  border: 2px solid #60bdaf;
   color: #fff;
   border-radius: 5px;
-  background-color: #0277bd;
+  background-color: #60bdaf;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -107,7 +118,14 @@ stroke-width: 2px;
   -webkit-transition: 0.2s;
 }
 a .author-name:hover{
-  color: #0277bd;
+  color: #60bdaf;
   background-color: #fff;
   text-decoration: none;
+}
+.impact-part{
+  text-align: center;
+}
+.impact-part .col-md-6{
+  height: 150px;
+  margin-bottom: 20px;
 }
