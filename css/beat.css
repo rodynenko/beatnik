@@ -129,3 +129,6 @@ a .author-name:hover{
   height: 150px;
   margin-bottom: 20px;
 }
+.def-text,.keruak,.gins,.berrous,.icons1,.icons2,.icons3,.icons4{
+  visibility: hidden;
+}

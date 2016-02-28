@@ -43,3 +43,21 @@ d3.json("beat.json", function(err, d){
   var t = new TL.Timeline('timeline', td, { height: 150, width: 600, track_events: ['nav_next','nav_previous','zoom_in','zoom_out']});
 })
 //  Animation Control  ------------------------------------------------------
+function AnimationElementHandler(e){
+    var el = $(e), tp = el.offset().top;
+    console.log(e+" ~ "+tp+" ~ "+($(window).height() + $("body").scrollTop() - 100));
+    if (tp < $(window).height() + $("body").scrollTop() - 100){
+      el.css("visibility","visible");
+      el.addClass("animated fadeInUp");
+    };
+};
+
+var es = [".def-text", ".keruak",".gins",".berrous",".icons1",".icons2",".icons3",".icons4"];
+
+$(window).scroll(function(){
+  $.each(es, function(j, v){
+    if (!$(v).hasClass("animated")) {
+      AnimationElementHandler(v);
+    };
+  });
+});
