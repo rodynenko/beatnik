@@ -1,15 +1,9 @@
-/*
- JS to Bit-Generation
-*/
+// JS to Bit-Generation   --------------------------------------------------
 $("#first-page").height(window.innerHeight);
 $("#bit-def").height(window.innerHeight);
 $(".title-block").css("padding-top", window.innerHeight*0.3);
 $(".def-block").css("padding-top", window.innerHeight*0.2);
-console.log(window.innerHeight);
-
-/*
-Path animation
-*/
+//  Path animation    ------------------------------------------------------
 var s = d3.select("svg#icon2").selectAll("path").call(transition);
 
 function transition(path){
@@ -25,30 +19,27 @@ function tweenDash() {
     return i(t);
   };
 }
-/*
-  Page move
-*/
+//  Page move   -------------------------------------------------------------
 function pageMove(){
   window.scrollBy(0, 15);
   if (window.pageYOffset < window.innerHeight) { requestAnimationFrame(pageMove); }
 }
 $(".arrow-down").bind("click", pageMove);
-/*
- TimeLine settings
-*/
-d3.json("beat.json", function(err, data){
-  var timeline_data = { events : [] };
-  for (var i=0; i<data.length; i++){
-    var slide = {
+//  TimeLine settings  ------------------------------------------------------
+d3.json("beat.json", function(err, d){
+  var td = { events : [] };
+  for (var i=0; i<d.length; i++){
+    var s = {
       start_date: {
-        year: data[i].year
+        year: d[i].year
       },
       text: {
         // header:
-        text: data[i].details
+        text: d[i].details
       }
     };
-    timeline_data.events.push(slide);
+    td.events.push(s);
   }
-  var timeline = new TL.Timeline('timeline', timeline_data, { height: 150, width: 600, track_events: ['nav_next','nav_previous','zoom_in','zoom_out']});
+  var t = new TL.Timeline('timeline', td, { height: 150, width: 600, track_events: ['nav_next','nav_previous','zoom_in','zoom_out']});
 })
+//  Animation Control  ------------------------------------------------------
