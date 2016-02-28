@@ -86,8 +86,9 @@ stroke-width: 2px;
 .photo{
   width: 200px;
   height: 200px;
-  margin-right: auto;
-  margin-left: auto;
+  transform: translate(25%);
+  -webkit-transform: translate(25%);
+  -moz-transform: translate(25%);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -131,4 +132,15 @@ a .author-name:hover{
 }
 .def-text,.keruak,.gins,.berrous,.icons1,.icons2,.icons3,.icons4{
   visibility: hidden;
+}
+.text-header{
+  font-size:18px;
+  color: #333;
+  font-weight:bold;
+}
+i.fa.fa-circle.t1{
+  font-size: 18px;
+}
+i.fa.fa-circle.t2{
+  font-size: 10px;
 }
