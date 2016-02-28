@@ -25,23 +25,6 @@ function pageMove(){
   if (window.pageYOffset < window.innerHeight) { requestAnimationFrame(pageMove); }
 }
 $(".arrow-down").bind("click", pageMove);
-//  TimeLine settings  ------------------------------------------------------
-d3.json("beat.json", function(err, d){
-  var td = { events : [] };
-  for (var i=0; i<d.length; i++){
-    var s = {
-      start_date: {
-        year: d[i].year
-      },
-      text: {
-        // header:
-        text: d[i].details
-      }
-    };
-    td.events.push(s);
-  }
-  var t = new TL.Timeline('timeline', td, { height: 150, width: 600, track_events: ['nav_next','nav_previous','zoom_in','zoom_out']});
-})
 //  Animation Control  ------------------------------------------------------
 function AnimationElementHandler(e){
     var el = $(e), tp = el.offset().top;
