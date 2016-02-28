@@ -45,7 +45,6 @@ d3.json("beat.json", function(err, d){
 //  Animation Control  ------------------------------------------------------
 function AnimationElementHandler(e){
     var el = $(e), tp = el.offset().top;
-    console.log(e+" ~ "+tp+" ~ "+($(window).height() + $("body").scrollTop() - 100));
     if (tp < $(window).height() + $("body").scrollTop() - 100){
       el.css("visibility","visible");
       el.addClass("animated fadeInUp");
