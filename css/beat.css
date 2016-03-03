@@ -94,20 +94,34 @@ stroke-width: 2px;
 .bio-row{
   margin-bottom: 50px;
 }
-#bit-footer{
-  padding-top: 20px;
-  padding-bottom: 20px;
+footer{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  font-weight: lighter;
   background-color: #333;
   color: #fff;
 }
+footer p{
+  margin: 0px;
+}
+footer a{
+  color: #fff;
+  text-decoration: underline;
+}
+footer a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
 .timeline{
   height: 200px;
 }
 .author-name{
-  border: 2px solid #60bdaf;
+  border: 2px solid #4f8a83; //#60bdaf;
   color: #fff;
   border-radius: 5px;
-  background-color: #60bdaf;
+  background-color: #4f8a83; //#60bdaf;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -116,7 +130,7 @@ stroke-width: 2px;
   -webkit-transition: 0.2s;
 }
 a .author-name:hover{
-  color: #60bdaf;
+  color: #4f8a83;//#60bdaf;
   background-color: #fff;
   text-decoration: none;
 }
