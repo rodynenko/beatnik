@@ -11,7 +11,7 @@ body{
   width: 100%;
   text-align: center;
 }
-#main-title{
+h1{
     font-size: 56px;
     font-weight: bold;
 }
@@ -72,7 +72,7 @@ stroke-width: 2px;
   font-size: 48px;
   font-weight: 700;
 }
-.chapter-title{
+h2.chapter-title{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
