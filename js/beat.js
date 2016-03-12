@@ -1,7 +1,7 @@
 // JS to Bit-Generation   --------------------------------------------------
 $("#first-page").height(window.innerHeight);
 $("#bit-def").height(window.innerHeight);
-$(".title-block").css("padding-top", window.innerHeight*0.3);
+$(".title-block").css("padding-top", window.innerHeight*0.2);
 $(".def-block").css("padding-top", window.innerHeight*0.2);
 //  Path animation    ------------------------------------------------------
 var s = d3.select("svg#icon2").selectAll("path").call(transition);
