@@ -3,22 +3,6 @@ $("#first-page").height(window.innerHeight);
 $("#bit-def").height(window.innerHeight);
 $(".title-block").css("padding-top", window.innerHeight*0.2);
 $(".def-block").css("padding-top", window.innerHeight*0.15);
-//  Path animation    ------------------------------------------------------
-var s = d3.select("svg#icon2").selectAll("path").call(transition);
-
-function transition(path){
-  path.transition()
-    .duration(3000)
-    .attrTween("stroke-dasharray", tweenDash);
-}
-
-function tweenDash() {
-  var l = this.getTotalLength(),
-      i = d3.interpolateString("0," + l, l + "," + l); // interpolation of stroke-dasharray attr
-  return function(t) {
-    return i(t);
-  };
-}
 //  Page move   -------------------------------------------------------------
 function pageMove(){
   window.scrollBy(0, 15);
