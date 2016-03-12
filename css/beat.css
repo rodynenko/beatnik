@@ -20,13 +20,24 @@ h1{
 }
 .arrow-down{
   top: 80%;
+  cursor: pointer;
   left: 50%;
   color: #60bdaf;
   position: absolute;
   font-size: 50px;
   transform: translateX(-50%);
 }
-.arrow-down:hover{
+.arrow-down-forward{
+  top: 185%;
+  cursor: pointer;
+  left: 50%;
+  color: #60bdaf;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.arrow-down:hover, .arrow-down-forward:hover{
   color: #888;
 }
 path {
@@ -78,6 +89,7 @@ h2.chapter-title{
   text-align: center;
   font-weight: bold;
   font-size: 32px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .photo{
@@ -86,10 +98,7 @@ h2.chapter-title{
   transform: translate(25%);
   -webkit-transform: translate(25%);
   -moz-transform: translate(25%);
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-radius: 50%;
 }
 .bio-row{
   margin-bottom: 50px;

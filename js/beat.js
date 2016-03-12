@@ -2,7 +2,7 @@
 $("#first-page").height(window.innerHeight);
 $("#bit-def").height(window.innerHeight);
 $(".title-block").css("padding-top", window.innerHeight*0.2);
-$(".def-block").css("padding-top", window.innerHeight*0.2);
+$(".def-block").css("padding-top", window.innerHeight*0.15);
 //  Path animation    ------------------------------------------------------
 var s = d3.select("svg#icon2").selectAll("path").call(transition);
 
@@ -24,7 +24,13 @@ function pageMove(){
   window.scrollBy(0, 15);
   if (window.pageYOffset < window.innerHeight) { requestAnimationFrame(pageMove); }
 }
+function pageMove2(){
+  window.scrollBy(0, 15);
+  if (window.pageYOffset < window.innerHeight*2) { requestAnimationFrame(pageMove2); }
+}
+
 $(".arrow-down").bind("click", pageMove);
+$(".arrow-down-forward").bind("click", pageMove2);
 //  Animation Control  ------------------------------------------------------
 function AnimationElementHandler(e){
     var el = $(e), tp = el.offset().top;
