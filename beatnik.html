@@ -12,10 +12,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link title="timeline-styles" rel="stylesheet" href="http://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/beat.css" type="text/css" rel="stylesheet">
     <link href="css/animate.min.css" type="text/css" rel="stylesheet">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
   </head>
   <body>
@@ -143,7 +146,9 @@
       <h2 class="chapter-title"><i class="fa fa-circle t2"></i> <i class="fa fa-circle t1"></i>   Историческая справка   <i class="fa fa-circle t1"></i> <i class="fa fa-circle t2"></i></h2>
     <!--  <div class="container timeline_embed"> -->
     <div class="container">
-            <iframe id="inneriframe" src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1kb4DsOz21qho7TEVwlIub5AJIoq9PmsPkYNBPvMNswI&font=Default&lang=en&initial_zoom=2&height=500' width='100%' height='500' frameborder='0'></iframe>
+      <div class="row">
+        <div id='timeline-embed' style="width: 100%; height: 600px;"></div>
+      </div>
     </div>
     <!--   </div> -->
 <!-- Benefits -->
@@ -174,7 +179,6 @@
         </div>
       </div>
     </footer>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/beat.js"></script>
   </body>
 </html>
