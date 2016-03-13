@@ -33,3 +33,17 @@ $(window).scroll(function(){
     };
   });
 });
+$(document).ready(function() {
+  $('#inneriframe').on('load', function(){
+    setTimeout(function(){
+      $('#inneriframe').contents().find('div.tl-text-content-container h2.tl-headline').css('font-size', '24px');
+      $('#inneriframe').contents().find('div.tl-text-content-container h2.tl-headline').css('line-height', '28px');
+      $('#inneriframe').contents().find('div.tl-text-content-container h2.tl-headline').css('font-family', '"Roboto", sans-serif');
+      $('#inneriframe').contents().find('div.tl-text-content p').css('font-family', '"Roboto", sans-serif');
+      $('#inneriframe').contents().find('div.tl-text-content p').css('font-size', '14px');
+      $('#inneriframe').contents().find('h3.tl-headline-date').css('font-size', '16px');
+      $('#inneriframe').contents().find('div.tl-credit').css('width', '25%');
+      $('#inneriframe').contents().find('div.tl-text').css('width', '75%');
+    }, 1500);
+  });
+});
