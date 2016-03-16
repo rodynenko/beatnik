@@ -127,10 +127,10 @@ footer a:hover{
   height: 200px;
 }
 .author-name{
-  border: 2px solid #4f8a83; //#60bdaf;
+  border: 2px solid #4f8a83;
   color: #fff;
   border-radius: 5px;
-  background-color: #4f8a83; //#60bdaf;
+  background-color: #4f8a83;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -139,7 +139,7 @@ footer a:hover{
   -webkit-transition: 0.2s;
 }
 a .author-name:hover{
-  color: #4f8a83;//#60bdaf;
+  color: #4f8a83;
   background-color: #fff;
   text-decoration: none;
 }
