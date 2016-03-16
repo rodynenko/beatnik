@@ -13,21 +13,25 @@ function pageMove2(){
 
 //  Animation Control  ------------------------------------------------------
 function AnimationElementHandler(e){
-    var el = $(e), tp = el.offset().top;
-    if (tp < $(window).height() + $("body").scrollTop() - 100){
-      el.css("visibility","visible");
-      el.addClass("animated fadeInUp");
-    };
+    var tp = $(e).offset().top;
+    console.log(tp+" ~ "+$(window).height() +" ~ "+ $("body").scrollTop());
+  /*  if (tp < $(window).height() + $("body").scrollTop() - 100){*/
+      //el.css("visibility","visible");
+      $(e).removeClass("not-visible");
+      $(e).addClass("animated fadeInUp visible");
+  //  };
 };
 
-var es = [".def-text", ".keruak",".gins",".berrous",".icons1",".icons2",".icons3",".icons4"];
-
-$(window).scroll(function(){
-  $.each(es, function(j, v){
-    if (!$(v).hasClass("animated")) {
-      AnimationElementHandler(v);
-    };
-  });
+var waypoints = $('.design').waypoint({
+  handler: function(direction) {
+    if (!$(this.element).hasClass("animated")){
+      console.log(this);
+      AnimationElementHandler(this.element);
+    }
+  },
+  offset: function() {
+    return  (Waypoint.viewportHeight()-100);
+  }
 });
 
 $(document).ready(function() {
@@ -40,7 +44,6 @@ $(document).ready(function() {
   $(".arrow-down-forward").bind("click", pageMove2);
 
   var timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1kb4DsOz21qho7TEVwlIub5AJIoq9PmsPkYNBPvMNswI');
-
   $('div.tl-text-content-container h2.tl-headline').css('font-size', '24px');
   $('div.tl-text-content-container h2.tl-headline').css('line-height', '28px');
   $('div.tl-slide-content').css('width', '100%');

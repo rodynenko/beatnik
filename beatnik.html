@@ -14,23 +14,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link title="timeline-styles" rel="stylesheet" href="http://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="css/beat.css" type="text/css" rel="stylesheet">
     <link href="css/animate.min.css" type="text/css" rel="stylesheet">
+    <link href="css/beat.css" type="text/css" rel="stylesheet">
     <script src="http://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
   </head>
   <body>
     <!-- Facebook plugin-->
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=461465457279768";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-    <!-- -->
+      <!-- -->
     <div id="first-page">
       <div class="container title-block">
         <div class="row">
@@ -59,10 +51,10 @@
             <img alt="бит поколение фото 3" src="images/beat3.jpg" id="beat3"/>
             <img alt="бит поколение фото 4" src="images/beat4.jpg" id="beat4"/>
           </div>
-          <div class="col-md-7 def-text">
+          <div class="col-md-7 design not-visible">
             <p class="def-title">Кто такие Битники?</p>
-            <p class="def-text"><span class="text-header">Бит-поколение</span> - название группы американских поэтов и прозаиков, появившиеся в середине 1940-х годов и завоевавшие признание в конце 1950-х гг. На битников можно смотреть с разных сторон: в качестве писателей-экзистенциалистов, безнравственных личностей, романтиков, аполитичных людей и представителей богемы. Но наиболее точным, по мнению критиков, является рассмотрение вышеупомянутых в качестве девиза или символа революции американских нравов.</p>
-            <p class="def-text">Термин «Бит-поколение» придумал Джек Керуак в 1948 году, охарактеризовавший им нонконформистское молодёжное движение и андеграунд в Нью-Йорке, которые, в свою очередь, выросли из практически исчезнувшего на тот момент «Потерянного поколения». Это поколение начало формироваться в начале 1940-х годов в студенческих кругах Колумбийского университета, где познакомились Джек Керуак, Аллен Гинзберг и Уильям Берроуз, ставшие в последствии главными представителями битников.</p>
+            <p><span class="text-header">Бит-поколение</span> - название группы американских поэтов и прозаиков, появившиеся в середине 1940-х годов и завоевавшие признание в конце 1950-х гг. На битников можно смотреть с разных сторон: в качестве писателей-экзистенциалистов, безнравственных личностей, романтиков, аполитичных людей и представителей богемы. Но наиболее точным, по мнению критиков, является рассмотрение вышеупомянутых в качестве девиза или символа революции американских нравов.</p>
+            <p>Термин «Бит-поколение» придумал Джек Керуак в 1948 году, охарактеризовавший им нонконформистское молодёжное движение и андеграунд в Нью-Йорке, которые, в свою очередь, выросли из практически исчезнувшего на тот момент «Потерянного поколения». Это поколение начало формироваться в начале 1940-х годов в студенческих кругах Колумбийского университета, где познакомились Джек Керуак, Аллен Гинзберг и Уильям Берроуз, ставшие в последствии главными представителями битников.</p>
             <a class="ref-link" target="_blank" title="о Бит-поколении на Википедии" href="https://ru.wikipedia.org/wiki/Бит-поколение">Больше на Wikipedia</a>
           </div>
         </div>
@@ -74,7 +66,7 @@
     <div>
       <div class="container">
 <!-- Keruak -->
-        <div class="row bio-row keruak">
+        <div class="row bio-row keruak design not-visible">
           <div class="col-md-4">
             <img class="photo" alt="Джек Керуак фото" src="images/keruak.jpg" />
           </div>
@@ -89,7 +81,7 @@
           </div>
         </div>
 <!-- Ginsberg -->
-        <div class="row bio-row gins">
+        <div class="row bio-row gins design not-visible">
           <div class="col-md-4">
             <img class="photo" alt="Аллен Гинсберг фото" src="images/gins.jpg" />
           </div>
@@ -102,7 +94,7 @@
           </div>
         </div>
 <!-- Burrouse -->
-        <div class="row bio-row berrous">
+        <div class="row bio-row berrous design not-visible">
           <div class="col-md-4">
             <img class="photo" alt="Уильям Берроуз фото" src="images/burroughs.jpg" />
           </div>
@@ -154,10 +146,10 @@
   <h2 class="chapter-title"><i class="fa fa-circle t2"></i> <i class="fa fa-circle t1"></i>   Влияние   <i class="fa fa-circle t1"></i> <i class="fa fa-circle t2"></i></h2>
     <div class="container impact-part">
       <div class="row">
-        <div class="col-md-6 icons1"><img src="images/sexes.svg" style="height: 200px; width: 200px;"><p class="impact-header">Сексуальный либерализм</p></div>
-        <div class="col-md-6 icons2"><img src="images/hand-pen.svg" style="height: 200px; width: 200px;"><p class="impact-header">Демократизация в срезе цензуры (спорно)</p></div>
-        <div class="col-md-6 icons3"><img src="images/canabis.svg" style="height: 200px; width: 200px;"><p class="impact-header">Демистификация каннабиса (спорно)</p></div>
-        <div class="col-md-6 icons4"><img src="images/gitare.svg" style="height: 200px; width: 200px;"><p class="impact-header">Эволюция ритм-н-блюза в рок-н-ролл (спорно)</p></div>
+        <div class="col-md-6 icons1 design not-visible"><img src="images/sexes.svg" style="height: 200px; width: 200px;"><p class="impact-header">Сексуальный либерализм</p></div>
+        <div class="col-md-6 icons2 design not-visible"><img src="images/hand-pen.svg" style="height: 200px; width: 200px;"><p class="impact-header">Демократизация в срезе цензуры (спорно)</p></div>
+        <div class="col-md-6 icons3 design not-visible"><img src="images/canabis.svg" style="height: 200px; width: 200px;"><p class="impact-header">Демистификация каннабиса (спорно)</p></div>
+        <div class="col-md-6 icons4 design not-visible"><img src="images/gitare.svg" style="height: 200px; width: 200px;"><p class="impact-header">Эволюция ритм-н-блюза в рок-н-ролл (спорно)</p></div>
       </div>
     </div>
 <!-- Footer -->
@@ -173,7 +165,6 @@
           <div class="col-md-2 col-sm-12">
             <div class="fb-share-button" data-href="http://infographica.com.ua/d/beatnik/beatnik.html" data-layout="button_count"></div>
             <!-- VK pluggin -->
-            <script type="text/javascript">document.write(VK.Share.button()); </script>
           </div>
         </div>
       </div>
