@@ -13,19 +13,13 @@ function pageMove2(){
 
 //  Animation Control  ------------------------------------------------------
 function AnimationElementHandler(e){
-    var tp = $(e).offset().top;
-    console.log(tp+" ~ "+$(window).height() +" ~ "+ $("body").scrollTop());
-  /*  if (tp < $(window).height() + $("body").scrollTop() - 100){*/
-      //el.css("visibility","visible");
-      $(e).removeClass("not-visible");
-      $(e).addClass("animated fadeInUp visible");
-  //  };
+    $(e).removeClass("not-visible");
+    $(e).addClass("animated fadeInUp visible");
 };
 
 var waypoints = $('.design').waypoint({
   handler: function(direction) {
     if (!$(this.element).hasClass("animated")){
-      console.log(this);
       AnimationElementHandler(this.element);
     }
   },
